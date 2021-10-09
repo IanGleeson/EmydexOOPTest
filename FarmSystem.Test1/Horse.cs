@@ -2,19 +2,9 @@
 
 namespace FarmSystem.Test1
 {
-    public class Horse 
+    public class Horse : Animal
     {
-        private string _id;
         private int _noOfLegs;
-
-        public string Id
-        {
-            get { return _id; }
-            set
-            {
-                _id = value;
-            }
-        }
 
 
         public int NoOfLegs
@@ -30,7 +20,7 @@ namespace FarmSystem.Test1
         }
         
 
-        public void Talk()
+        public override void Talk()
         {
             Console.WriteLine("Horse says neigh!");
         }

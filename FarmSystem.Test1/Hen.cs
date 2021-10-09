@@ -2,22 +2,9 @@
 
 namespace FarmSystem.Test1
 {
-    public class Hen 
+    public class Hen : Animal
     {
-        private string _id;
         private int _noOfLegs = 4;
-
-
-        public string Id
-        {
-            get { return _id; }
-            set
-            {
-                _id = value;
-            }
-        }
-        
-
 
         public int NoOfLegs
         {
@@ -31,7 +18,7 @@ namespace FarmSystem.Test1
             }
         }
 
-        public void Talk()
+        public override void Talk()
         {
             Console.WriteLine("Hen say CLUCKAAAAAWWWWK!");
         }
